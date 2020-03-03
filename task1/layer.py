@@ -2,6 +2,8 @@ import numpy as np
 
 from initializer import *
 
+
+
 class Layer(): 
     def __init__(self, x):
         super().__init__()
@@ -29,6 +31,8 @@ class DenseLayer(Layer):
             pre_dim = x[-1]
         self.W = w_initializer.init((dim, pre_dim))
         self.B = b_initializer.init((dim, 1))
+        self.input = None
+        self.output = None
     
     def forward(self, x): 
         if isinstance(self.pre_layer, Layer): 
@@ -36,7 +40,25 @@ class DenseLayer(Layer):
         else: 
             x = self._reshape_(x)
 
-        return np.dot(self.W, x) + self.B
+        self.input = x
+        self.output = np.dot(self.W, x) + self.B
+        return self.output
+
+    def backward(self, label):
+        error = self.output - label 
+        grad_W = np.dot(error, np.transpose(self.input))
+
+        print('error')
+        print(np.transpose(error))
+
+        print('input')
+        print(np.transpose(self.input))
+
+        print('grad W')
+        print(np.transpose(grad_W))
+
+        self.W = self.W - 1 * grad_W
+
 
 
 
@@ -64,6 +86,9 @@ class SoftmaxLayer(Layer):
         else: 
             x = self._reshape_(x)
         y = np.exp(x)
-        s = np.sum(y)
+        s = np.sum(y, axis=0)
         return y / s
 
+    def backward(self):
+        return super().backward()
+        
