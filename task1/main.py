@@ -1,42 +1,76 @@
 import numpy as np 
 from layer import * 
-from loss import MSELoss
+from loss import MSELoss, SoftmaxCrossEntropyLoss, CrossEntropyLoss
+from model import Model
+from utils import *
+import pickle
+
+
+def evaluate(model, data):
+    x_data = data['x']
+    y_data = data['y']
+
+    batch_size = 100
+    size = len(x_data)
+    correct = 0
+    for start_idx in range(0, size, batch_size):
+        end_idx = min(start_idx + batch_size, size)
+        x = np.array(x_data[start_idx: end_idx])
+        y = y_data[start_idx: end_idx]
+        output = softmax(model.forward(x))
+        correct += len(y) * calculate_acc(output, y)
+
+    return correct / size
+
+
 
 if __name__ == "__main__":
     np.random.seed(13)
-    x_shape = [None, 5]
-    # f1 = DenseLayer(x_shape, 5, UniformInitializer(-4, 4))
-    # f2 = DenseLayer(f1, 128, UniformInitializer(-4, 4))
-    # f2 = DenseLayer(f2, 5, UniformInitializer(-4, 4))
-    # f3 = TanhLayer(f2)
-    # f4 = SoftmaxLayer(f3)
     
-    f4 = DenseLayer(x_shape, 5)
 
-
-    x1 = [0.01, 0.01, 0.03, 0.04, 0.05]
-    x2 = [1, 2, 3, 4, 5]
-
-    x = [x1, x2]
+    with open('data.pkl', 'rb') as f:
+        train_data = pickle.load(f)
     
-    print(np.array(x).shape)
-    # print(f3.forward(x1))
-    print(f4.forward(x1))
+    with open('validation.pkl', 'rb') as f:
+        val_data = pickle.load(f)
 
-    
-    for i in range(100):
-        ans = f4.forward(x1)
+    with open('test.pkl', 'rb') as f:
+        test_data = pickle.load(f)
+
+    x_data = train_data['x']
+    y_data = train_data['y']
+
+    model = Model()
+    f1 = DenseLayer('f1', 5, 5, 1)
+    f2 = SoftmaxLayer('f2')
+    f3 = TanhLayer('f3')
+    model.addLayer(f1)
+    # model.addLayer(f3)
+    # model.addLayer(f2)
+
+
+    for i in range(10000):
+        start = i % 100
+        batch_size = 100
+        x = x_data[start*batch_size:start*batch_size+batch_size]
+        label = y_data[start*batch_size:start*batch_size+batch_size]
         
+        y = onehot_encoding(label, 5)
 
-        print(np.transpose(ans))
+        x = np.array(x)
+        
+        ans = model.forward(x)
+        # print('x', x)
+        loss = SoftmaxCrossEntropyLoss('loss')
+        print('acc', calculate_acc(softmax(ans), label), end='  ')
+        print('loss', loss.forward(ans, y))
+        # print('ans', softmax(ans))
+        grad = loss.backward(ans, y)
+        model.backward(grad)
+        model.update()
 
-        label1 = [0, 0, 0, 0, 1]
-        label2 = [0, 0, 0, 1, 1]
+    print(evaluate(model, test_data))
 
-        label = [label1, label2]
-
-        print(MSELoss(ans, label1))
-        print(np.transpose([label1]))
-        f4.backward(np.transpose([label1]))
+    
 
 

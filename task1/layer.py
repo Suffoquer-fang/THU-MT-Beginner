@@ -1,94 +1,85 @@
-import numpy as np 
+import numpy as np
 
-from initializer import *
+class Layer():
+    def __init__(self, name, trainable=False):
+        self.name = name
+        self.trainable = trainable
+        self.saved_input = None
 
-
-
-class Layer(): 
-    def __init__(self, x):
-        super().__init__()
-        self.x = x
-    def forward(self):
+    def forward(self, input):
         pass
-    def backward(self):
+
+    def backward(self, grad_output):
         pass
-    def _reshape_(self, x): 
-        if not isinstance(self.x, Layer):
-            x = np.array(x)
-            if len(x.shape) < len(self.x): 
-                x = np.array([x])
-        x = np.transpose(x)
-        return x
 
-class DenseLayer(Layer): 
-    def __init__(self, x, dim, w_initializer=OneInitializer(), b_initializer=ZeroInitializer()):
-        super().__init__(x)
-        self.pre_layer = x 
-        self.dim = dim 
-        if isinstance(self.pre_layer, Layer): 
-            pre_dim = x.dim
-        else: 
-            pre_dim = x[-1]
-        self.W = w_initializer.init((dim, pre_dim))
-        self.B = b_initializer.init((dim, 1))
-        self.input = None
-        self.output = None
-    
-    def forward(self, x): 
-        if isinstance(self.pre_layer, Layer): 
-            x = self.pre_layer.forward(x)
-        else: 
-            x = self._reshape_(x)
+    def update(self, config):
+        pass
 
-        self.input = x
-        self.output = np.dot(self.W, x) + self.B
-        return self.output
+    def save_input(self, tensor):
+        self.saved_input = tensor
 
-    def backward(self, label):
-        error = self.output - label 
-        grad_W = np.dot(error, np.transpose(self.input))
 
-        print('error')
-        print(np.transpose(error))
+class DenseLayer(Layer):
+    def __init__(self, name, in_num, out_num, init_std):
+        super(DenseLayer, self).__init__(name, trainable=True)
+        self.in_num = in_num
+        self.out_num = out_num
+        self.W = np.random.randn(in_num, out_num) * init_std
+        self.b = np.zeros(out_num)
 
-        print('input')
-        print(np.transpose(self.input))
+        self.grad_W = np.zeros((in_num, out_num))
+        self.grad_b = np.zeros(out_num)
 
-        print('grad W')
-        print(np.transpose(grad_W))
+    def forward(self, input):
+        self.save_input(input)
+        output = np.dot(input, self.W) + self.b
+        return output
+        
+    def backward(self, grad_output):
+        tensor = self.saved_input
+        
+        self.grad_W = np.dot(tensor.T, grad_output)
+        self.grad_b = np.sum(grad_output, axis=0)
 
-        self.W = self.W - 1 * grad_W
+        return np.dot(grad_output, self.W.T)
 
+    def update(self, learning_rate):
+        lr = learning_rate
+
+        self.W = self.W - lr * self.grad_W
+        self.b = self.b - lr * self.grad_b
 
 
 
 class TanhLayer(Layer):
-    def __init__(self, x):
-        super().__init__(x)
-        self.pre_layer = x 
+    def __init__(self, name):
+        super(TanhLayer, self).__init__(name)
 
-    def forward(self, x):
-        if isinstance(self.pre_layer, Layer): 
-            x = self.pre_layer.forward(x)
-        else: 
-            x = self._reshape_(x)
-        return np.tanh(x)
-        
+    def forward(self, input):
+        output = np.tanh(input)
+        self.save_input(output)
+        return output
+
+
+    def backward(self, grad_output):
+        tensor = self.saved_input
+        output = (1 - tensor ** 2) * grad_output
+        return np.array(output)
 
 class SoftmaxLayer(Layer):
-    def __init__(self, x):
-        super().__init__(x)
-        self.pre_layer = x 
+    def __init__(self, name):
+        super(SoftmaxLayer, self).__init__(name)
 
-    def forward(self, x):
-        if isinstance(self.pre_layer, Layer): 
-            x = self.pre_layer.forward(x)
-        else: 
-            x = self._reshape_(x)
-        y = np.exp(x)
-        s = np.sum(y, axis=0)
-        return y / s
-
-    def backward(self):
-        return super().backward()
+    def forward(self, input):
         
+        exp = np.exp(input)
+        exp_sum = np.sum(exp, axis=1)
+        exp_sum = np.expand_dims(exp_sum, axis=1)
+        h = exp / exp_sum
+        self.save_input(h)
+        return h
+
+
+    def backward(self, grad_output):
+       
+        return grad_output
