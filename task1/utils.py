@@ -33,7 +33,7 @@ def softmax(input):
     return exp / exp_sum
 
 if __name__ == "__main__":
-    # np.random.seed(12345)
+    np.random.seed(12345)
     # np.random.seed(54321) #val
-    np.random.seed(66666) #test
-    generate_data(3000, 'test')
+    # np.random.seed(66666) #test
+    generate_data(50000, 'train')
