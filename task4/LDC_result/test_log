@@ -1,0 +1,14 @@
+Name: nist02.en0, Loss: 6.0196, Perplexity: 411.42, AvgPerplexity: 436.56
+Name: nist03.en0, Loss: 6.5394, Perplexity: 691.89, AvgPerplexity: 762.40
+Name: nist04.en0, Loss: 6.1447, Perplexity: 466.24, AvgPerplexity: 495.64
+Name: nist05.en0, Loss: 6.6803, Perplexity: 796.57, AvgPerplexity: 851.01
+Name: nist06.en0, Loss: 6.3371, Perplexity: 565.18, AvgPerplexity: 612.43
+Name: nist02.en0, Loss: 6.0196, Perplexity: 411.42, AvgPerplexity: 436.56
+Name: nist02.en1, Loss: 6.4586, Perplexity: 638.17, AvgPerplexity: 689.62
+Name: nist02.en2, Loss: 6.5639, Perplexity: 709.04, AvgPerplexity: 754.15
+Name: nist02.en3, Loss: 6.8370, Perplexity: 931.67, AvgPerplexity: 1000.64
+Name: nist03.en0, Loss: 6.5394, Perplexity: 691.89, AvgPerplexity: 762.40
+Name: nist04.en0, Loss: 6.1447, Perplexity: 466.24, AvgPerplexity: 495.64
+Name: nist05.en0, Loss: 6.6803, Perplexity: 796.57, AvgPerplexity: 851.01
+Name: nist06.en0, Loss: 6.3371, Perplexity: 565.18, AvgPerplexity: 612.43
+Name: nist08.en0, Loss: 6.7725, Perplexity: 873.51, AvgPerplexity: 928.29

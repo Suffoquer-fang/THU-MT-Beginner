@@ -1,0 +1,1537 @@
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:521: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:522: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Traceback (most recent call last):
+  File "THUMT/thumt/bin/trainer.py", line 512, in <module>
+    main(parse_args())
+  File "THUMT/thumt/bin/trainer.py", line 344, in main
+    override_parameters(params, args)
+  File "THUMT/thumt/bin/trainer.py", line 182, in override_parameters
+    params.parse(args.parameters)
+  File "/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/contrib/training/python/training/hparam.py", line 525, in parse
+    values_map = parse_values(values, type_map)
+  File "/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/contrib/training/python/training/hparam.py", line 256, in parse_values
+    raise ValueError('Unknown hyperparameter type for %s' % name)
+ValueError: Unknown hyperparameter type for eval_step
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:521: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:522: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/fy/miniconda3/envs/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+INFO:tensorflow:Restoring hyper parameters from /data/disk3/private/fy/params.json
+INFO:tensorflow:Restoring model parameters from /data/disk3/private/fy/transformer.json
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:transformer/bias                                                                	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/layer_norm/offset                  	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/layer_norm/scale                   	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/bias	shape    (1024,)             
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/multihead_attention/kv_transform/matrix	shape    (512, 1024)         
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/multihead_attention/q_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/encdec_attention/multihead_attention/q_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/decoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/decoder/layer_0/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_0/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/layer_norm/offset                  	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/layer_norm/scale                   	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/bias	shape    (1024,)             
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/multihead_attention/kv_transform/matrix	shape    (512, 1024)         
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/multihead_attention/q_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/encdec_attention/multihead_attention/q_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/decoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/decoder/layer_1/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_1/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/layer_norm/offset                  	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/layer_norm/scale                   	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/bias	shape    (1024,)             
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/multihead_attention/kv_transform/matrix	shape    (512, 1024)         
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/multihead_attention/q_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/encdec_attention/multihead_attention/q_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/decoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/decoder/layer_2/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_2/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/layer_norm/offset                  	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/layer_norm/scale                   	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/bias	shape    (1024,)             
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/multihead_attention/kv_transform/matrix	shape    (512, 1024)         
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/multihead_attention/q_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/encdec_attention/multihead_attention/q_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/decoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/decoder/layer_3/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_3/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/layer_norm/offset                  	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/layer_norm/scale                   	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/bias	shape    (1024,)             
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/multihead_attention/kv_transform/matrix	shape    (512, 1024)         
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/multihead_attention/q_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/encdec_attention/multihead_attention/q_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/decoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/decoder/layer_4/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_4/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/layer_norm/offset                  	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/layer_norm/scale                   	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/bias	shape    (1024,)             
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/multihead_attention/kv_transform/matrix	shape    (512, 1024)         
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/multihead_attention/q_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/encdec_attention/multihead_attention/q_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/decoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/decoder/layer_5/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/decoder/layer_5/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/encoder/layer_0/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_0/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/encoder/layer_0/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_0/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_0/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/encoder/layer_1/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_1/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/encoder/layer_1/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_1/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_1/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/encoder/layer_2/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_2/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/encoder/layer_2/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_2/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_2/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/encoder/layer_3/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_3/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/encoder/layer_3/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_3/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_3/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/encoder/layer_4/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_4/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/encoder/layer_4/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_4/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_4/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/bias      	shape    (2048,)             
+INFO:tensorflow:transformer/encoder/layer_5/feed_forward/ffn_layer/input_layer/linear/matrix    	shape    (512, 2048)         
+INFO:tensorflow:transformer/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/bias     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_5/feed_forward/ffn_layer/output_layer/linear/matrix   	shape    (2048, 512)         
+INFO:tensorflow:transformer/encoder/layer_5/feed_forward/layer_norm/offset                      	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_5/feed_forward/layer_norm/scale                       	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/layer_norm/offset                    	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/layer_norm/scale                     	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/multihead_attention/output_transform/bias	shape    (512,)              
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/multihead_attention/output_transform/matrix	shape    (512, 512)          
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/multihead_attention/qkv_transform/bias	shape    (1536,)             
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/multihead_attention/qkv_transform/matrix	shape    (512, 1536)         
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/multihead_attention/rpr_k            	shape    (33, 64)            
+INFO:tensorflow:transformer/encoder/layer_5/self_attention/multihead_attention/rpr_v            	shape    (33, 64)            
+INFO:tensorflow:transformer/softmax                                                             	shape    (239350, 512)       
+INFO:tensorflow:transformer/source_embedding                                                    	shape    (115208, 512)       
+INFO:tensorflow:transformer/target_embedding                                                    	shape    (239350, 512)       
+INFO:tensorflow:Total trainable variables size: 348270592
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Create EvaluationHook.
+INFO:tensorflow:Graph was finalized.
+2020-04-16 00:38:10.097333: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2020-04-16 00:39:38.885789: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 00:39:53.309091: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 0, loss = 11.3959055, source = [156  40], target = [156  40]
+2020-04-16 00:42:55.203412: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 00:43:13.008797: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 0, loss = 11.367805, source = [130  48], target = [130  48] (199.158 sec)
+2020-04-16 00:45:45.546740: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 00:46:03.190775: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 0, loss = 11.341211, source = [111  56], target = [111  56] (163.952 sec)
+2020-04-16 00:48:44.402155: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 00:49:02.813763: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 1, loss = 11.393125, source = [195  32], target = [195  32] (184.339 sec)
+INFO:tensorflow:Saving checkpoints for 1 into /data/disk3/private/fy/model.ckpt.
+2020-04-16 00:52:28.107832: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 00:52:40.440969: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 1, loss = 11.380031, source = [156  40], target = [156  40] (213.030 sec)
+2020-04-16 00:54:49.340874: W tensorflow/core/framework/allocator.cc:101] Allocation of 5451435600 exceeds 10% of system memory.
+2020-04-16 00:55:02.207497: W tensorflow/core/framework/allocator.cc:101] Allocation of 5451435600 exceeds 10% of system memory.
+INFO:tensorflow:step = 1, loss = 11.357886, source = [78 79], target = [78 73] (134.220 sec)
+2020-04-16 00:57:03.392499: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 00:57:22.245038: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 1, loss = 11.4014845, source = [260  24], target = [260  24] (147.443 sec)
+2020-04-16 00:59:39.821290: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 00:59:56.605299: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 2, loss = 11.363058, source = [130  48], target = [130  48] (160.294 sec)
+2020-04-16 01:02:11.035054: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 01:02:25.761092: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 2, loss = 11.360561, source = [223  28], target = [223  28] (140.645 sec)
+2020-04-16 01:04:36.086252: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:04:53.126680: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 2, loss = 11.38003, source = [312  20], target = [312  20] (151.310 sec)
+2020-04-16 01:07:11.567147: W tensorflow/core/framework/allocator.cc:101] Allocation of 5757803600 exceeds 10% of system memory.
+2020-04-16 01:07:29.668292: W tensorflow/core/framework/allocator.cc:101] Allocation of 5757803600 exceeds 10% of system memory.
+INFO:tensorflow:step = 2, loss = 11.365936, source = [97 64], target = [97 62] (154.591 sec)
+2020-04-16 01:09:37.047383: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 01:09:53.575199: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 3, loss = 11.363384, source = [111  56], target = [111  56] (143.122 sec)
+2020-04-16 01:12:07.983208: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:12:26.622455: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 3, loss = 11.346629, source = [195  32], target = [195  32] (154.103 sec)
+2020-04-16 01:14:43.819621: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+2020-04-16 01:14:57.653097: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+INFO:tensorflow:step = 3, loss = 11.358538, source = [156  40], target = [156  39] (151.996 sec)
+2020-04-16 01:17:06.662959: W tensorflow/core/framework/allocator.cc:101] Allocation of 5376758400 exceeds 10% of system memory.
+2020-04-16 01:17:19.136658: W tensorflow/core/framework/allocator.cc:101] Allocation of 5376758400 exceeds 10% of system memory.
+INFO:tensorflow:step = 3, loss = 11.347676, source = [78 79], target = [78 72] (135.930 sec)
+2020-04-16 01:19:21.359431: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:19:33.487022: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 4, loss = 11.374518, source = [260  24], target = [260  24] (136.705 sec)
+2020-04-16 01:21:47.329753: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 01:22:06.528596: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 4, loss = 11.337834, source = [130  48], target = [130  47] (148.161 sec)
+2020-04-16 01:24:14.789885: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 01:24:25.991906: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 4, loss = 11.3714695, source = [223  28], target = [223  28] (144.360 sec)
+2020-04-16 01:26:30.512388: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:26:46.311480: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 4, loss = 11.333891, source = [156  40], target = [156  40] (144.815 sec)
+2020-04-16 01:28:58.325026: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 01:29:14.433831: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 5, loss = 11.30684, source = [111  56], target = [111  55] (137.216 sec)
+2020-04-16 01:31:18.067153: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:31:36.263088: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 5, loss = 11.3596, source = [312  20], target = [312  20] (156.653 sec)
+2020-04-16 01:33:52.447193: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 01:34:06.647849: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 5, loss = 11.267584, source = [97 64], target = [97 64] (148.207 sec)
+2020-04-16 01:36:17.543750: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:36:28.813555: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 5, loss = 11.330076, source = [195  32], target = [195  32] (135.245 sec)
+2020-04-16 01:38:42.325325: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 01:38:59.709794: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 6, loss = 11.311144, source = [130  48], target = [130  47] (155.447 sec)
+2020-04-16 01:41:07.800380: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:41:21.619711: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 6, loss = 11.303106, source = [156  40], target = [156  40] (146.294 sec)
+2020-04-16 01:43:34.628432: W tensorflow/core/framework/allocator.cc:101] Allocation of 5538559000 exceeds 10% of system memory.
+2020-04-16 01:43:45.203126: W tensorflow/core/framework/allocator.cc:101] Allocation of 5538559000 exceeds 10% of system memory.
+INFO:tensorflow:step = 6, loss = 11.256487, source = [65 96], target = [65 89] (125.750 sec)
+2020-04-16 01:45:43.201861: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:45:58.205449: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 6, loss = 11.331124, source = [260  24], target = [260  24] (137.239 sec)
+2020-04-16 01:48:08.816127: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+2020-04-16 01:48:26.450182: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+INFO:tensorflow:step = 7, loss = 11.248143, source = [78 80], target = [78 79] (161.961 sec)
+2020-04-16 01:50:41.026598: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 01:50:53.136974: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 7, loss = 11.271701, source = [223  28], target = [223  28] (139.317 sec)
+2020-04-16 01:53:01.202435: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:53:20.324886: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 7, loss = 11.257581, source = [130  48], target = [130  48] (155.013 sec)
+2020-04-16 01:55:38.887576: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:55:50.589475: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 7, loss = 11.272341, source = [156  40], target = [156  40] (145.567 sec)
+2020-04-16 01:57:59.642794: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 01:58:10.336967: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 8, loss = 11.335789, source = [390  16], target = [390  16] (141.404 sec)
+2020-04-16 02:00:24.949286: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 02:00:46.596399: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 8, loss = 11.216689, source = [111  56], target = [111  56] (154.398 sec)
+2020-04-16 02:03:04.894405: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:03:18.030155: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 8, loss = 11.245124, source = [195  32], target = [195  32] (146.446 sec)
+2020-04-16 02:05:21.717887: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 02:05:32.663252: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 8, loss = 11.244747, source = [130  48], target = [130  47] (133.374 sec)
+2020-04-16 02:07:42.974228: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:08:03.406804: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 9, loss = 11.236194, source = [156  40], target = [156  40] (171.306 sec)
+2020-04-16 02:10:26.806728: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:10:37.052138: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 9, loss = 11.252523, source = [312  20], target = [312  20] (135.413 sec)
+2020-04-16 02:12:42.692640: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 02:12:53.967858: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 9, loss = 11.197906, source = [97 64], target = [97 63] (133.821 sec)
+2020-04-16 02:14:59.990744: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 02:15:21.477734: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 9, loss = 11.227061, source = [223  28], target = [223  28] (157.079 sec)
+2020-04-16 02:17:41.794703: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:17:54.714065: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 10, loss = 11.242239, source = [260  24], target = [260  24] (151.565 sec)
+2020-04-16 02:20:03.528316: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:20:14.734164: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 10, loss = 11.229164, source = [520  12], target = [520  12] (141.460 sec)
+2020-04-16 02:22:26.022067: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:22:42.225599: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 10, loss = 11.153001, source = [130  48], target = [130  48] (146.937 sec)
+2020-04-16 02:25:02.312591: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:25:21.134024: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 10, loss = 11.186983, source = [156  40], target = [156  40] (154.225 sec)
+2020-04-16 02:27:27.592761: W tensorflow/core/framework/allocator.cc:101] Allocation of 5675467200 exceeds 10% of system memory.
+2020-04-16 02:27:40.056507: W tensorflow/core/framework/allocator.cc:101] Allocation of 5675467200 exceeds 10% of system memory.
+INFO:tensorflow:step = 11, loss = 11.146861, source = [78 80], target = [78 76] (139.222 sec)
+2020-04-16 02:29:48.877799: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 02:30:07.387595: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 11, loss = 11.112618, source = [111  56], target = [111  55] (141.309 sec)
+2020-04-16 02:32:14.760521: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 02:32:32.746675: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 11, loss = 11.219389, source = [446  14], target = [446  14] (163.576 sec)
+2020-04-16 02:34:57.587697: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:35:11.577226: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 11, loss = 11.133846, source = [195  32], target = [195  32] (147.074 sec)
+2020-04-16 02:37:18.223213: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:37:29.597869: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 12, loss = 11.113097, source = [130  48], target = [130  48] (138.457 sec)
+2020-04-16 02:39:36.311503: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:39:52.605741: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 12, loss = 11.078633, source = [156  40], target = [156  40] (137.470 sec)
+2020-04-16 02:42:01.709296: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 02:42:16.534944: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 12, loss = 11.098512, source = [223  28], target = [223  28] (147.240 sec)
+2020-04-16 02:44:29.436140: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:44:45.126081: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 12, loss = 11.128632, source = [312  20], target = [312  20] (154.980 sec)
+2020-04-16 02:46:54.784040: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:47:08.260663: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 13, loss = 11.080952, source = [156  40], target = [156  40] (136.636 sec)
+2020-04-16 02:49:20.618535: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:49:36.242119: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 13, loss = 11.066554, source = [260  24], target = [260  24] (149.935 sec)
+2020-04-16 02:51:52.008194: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 02:52:06.503637: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 13, loss = 10.9983225, source = [130  48], target = [130  48] (156.280 sec)
+2020-04-16 02:54:19.995188: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 02:54:32.097214: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 13, loss = 11.0272, source = [78 80], target = [78 75] (130.194 sec)
+2020-04-16 02:56:30.476439: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 02:56:47.931523: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 14, loss = 11.033055, source = [97 64], target = [97 63] (143.672 sec)
+2020-04-16 02:59:02.500043: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 02:59:19.574731: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 14, loss = 10.954662, source = [111  56], target = [111  56] (157.634 sec)
+2020-04-16 03:01:37.053050: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:01:48.400777: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 14, loss = 10.995175, source = [195  32], target = [195  32] (148.494 sec)
+2020-04-16 03:04:00.770486: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:04:12.816987: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 14, loss = 10.964012, source = [156  40], target = [156  40] (141.601 sec)
+2020-04-16 03:06:21.183486: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+2020-04-16 03:06:38.575468: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+INFO:tensorflow:step = 15, loss = 11.145698, source = [625  10], target = [625  10] (143.226 sec)
+2020-04-16 03:08:52.827601: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+2020-04-16 03:09:12.552609: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+INFO:tensorflow:step = 15, loss = 11.164153, source = [781   8], target = [781   8] (158.801 sec)
+2020-04-16 03:11:31.170730: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 03:11:44.488492: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 15, loss = 10.933086, source = [223  28], target = [223  28] (151.842 sec)
+2020-04-16 03:13:55.700940: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:14:06.071343: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 15, loss = 10.931774, source = [130  48], target = [130  48] (140.434 sec)
+2020-04-16 03:16:14.290024: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:16:33.296192: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 16, loss = 10.960239, source = [156  40], target = [156  40] (148.907 sec)
+2020-04-16 03:18:52.986392: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:19:10.654898: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 16, loss = 10.9238825, source = [260  24], target = [260  24] (158.420 sec)
+2020-04-16 03:21:27.829595: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 03:21:40.557897: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 16, loss = 10.873394, source = [111  56], target = [111  55] (147.254 sec)
+2020-04-16 03:23:50.444463: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:24:03.964997: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 16, loss = 10.903016, source = [195  32], target = [195  32] (141.886 sec)
+2020-04-16 03:26:11.208203: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:26:26.363474: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 17, loss = 10.9119625, source = [312  20], target = [312  20] (143.163 sec)
+2020-04-16 03:28:43.307735: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 03:29:02.639049: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 17, loss = 10.833521, source = [130  48], target = [130  47] (154.248 sec)
+2020-04-16 03:31:14.353962: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:31:26.615102: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 17, loss = 10.871726, source = [156  40], target = [156  40] (148.007 sec)
+2020-04-16 03:33:36.803561: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 03:33:48.039791: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 17, loss = 10.798816, source = [97 64], target = [97 64] (138.865 sec)
+2020-04-16 03:35:58.764644: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+2020-04-16 03:36:17.937581: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+INFO:tensorflow:step = 18, loss = 10.841987, source = [78 79], target = [78 78] (157.656 sec)
+2020-04-16 03:38:42.685148: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 03:39:02.590168: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 18, loss = 10.7809515, source = [223  28], target = [223  28] (164.305 sec)
+2020-04-16 03:41:18.474769: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:41:32.664256: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 18, loss = 10.82291, source = [390  16], target = [390  16] (142.843 sec)
+2020-04-16 03:43:40.829570: W tensorflow/core/framework/allocator.cc:101] Allocation of 5227404000 exceeds 10% of system memory.
+2020-04-16 03:43:55.945159: W tensorflow/core/framework/allocator.cc:101] Allocation of 5227404000 exceeds 10% of system memory.
+INFO:tensorflow:step = 18, loss = 10.763097, source = [65 96], target = [65 84] (134.369 sec)
+2020-04-16 03:46:04.233443: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 03:46:24.573457: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 19, loss = 10.767604, source = [111  56], target = [111  56] (172.219 sec)
+2020-04-16 03:48:48.555483: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 03:49:03.062752: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 19, loss = 10.74486, source = [130  48], target = [130  47] (143.507 sec)
+2020-04-16 03:51:11.270709: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:51:30.115442: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 19, loss = 10.731267, source = [156  40], target = [156  40] (146.105 sec)
+2020-04-16 03:53:44.946494: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:54:04.123234: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 19, loss = 10.728718, source = [260  24], target = [260  24] (160.886 sec)
+2020-04-16 03:56:26.317873: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:56:38.237465: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 20, loss = 10.703276, source = [195  32], target = [195  32] (152.123 sec)
+2020-04-16 03:58:50.302349: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 03:59:02.713461: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 20, loss = 10.666749, source = [156  40], target = [156  40] (139.195 sec)
+2020-04-16 04:01:19.205540: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:01:37.634477: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 20, loss = 10.6447315, source = [130  48], target = [130  48] (168.256 sec)
+2020-04-16 04:04:00.127660: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 04:04:13.185212: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 20, loss = 10.657165, source = [78 80], target = [78 75] (141.016 sec)
+2020-04-16 04:06:18.201798: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:06:30.386012: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 21, loss = 10.693758, source = [312  20], target = [312  20] (140.389 sec)
+2020-04-16 04:08:48.148725: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 04:09:05.774837: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 21, loss = 10.610478, source = [111  56], target = [111  55] (158.607 sec)
+2020-04-16 04:11:22.772164: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 04:11:38.364401: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 21, loss = 10.622575, source = [223  28], target = [223  28] (150.605 sec)
+2020-04-16 04:13:47.048777: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:13:58.473908: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 21, loss = 10.642748, source = [156  40], target = [156  40] (137.091 sec)
+2020-04-16 04:16:06.193095: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 04:16:20.626714: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 22, loss = 10.588393, source = [97 64], target = [97 63] (143.154 sec)
+2020-04-16 04:18:37.873167: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:18:54.673346: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 22, loss = 10.560059, source = [195  32], target = [195  32] (158.037 sec)
+2020-04-16 04:21:12.450249: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:21:25.036914: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 22, loss = 10.583212, source = [260  24], target = [260  24] (150.745 sec)
+2020-04-16 04:23:36.979129: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:23:48.662918: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 22, loss = 10.702759, source = [520  12], target = [520  12] (138.367 sec)
+2020-04-16 04:26:04.536199: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:26:24.356774: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 23, loss = 10.561566, source = [130  48], target = [130  48] (164.246 sec)
+2020-04-16 04:28:47.732813: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:28:58.869673: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 23, loss = 10.521353, source = [156  40], target = [156  40] (152.071 sec)
+2020-04-16 04:31:12.293646: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 04:31:25.315815: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 23, loss = 10.550896, source = [111  56], target = [111  55] (137.418 sec)
+2020-04-16 04:33:36.262857: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:33:58.310556: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 23, loss = 10.483259, source = [130  48], target = [130  48] (163.031 sec)
+2020-04-16 04:36:19.336308: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+2020-04-16 04:36:29.876094: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+INFO:tensorflow:step = 24, loss = 10.514157, source = [156  40], target = [156  39] (146.181 sec)
+2020-04-16 04:38:38.517721: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+2020-04-16 04:38:52.527607: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+INFO:tensorflow:step = 24, loss = 10.545971, source = [78 80], target = [78 77] (138.917 sec)
+2020-04-16 04:40:56.037311: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 04:41:12.170710: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 24, loss = 10.51309, source = [446  14], target = [446  14] (140.212 sec)
+2020-04-16 04:43:26.986934: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 04:43:46.823821: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 24, loss = 10.459397, source = [223  28], target = [223  28] (164.691 sec)
+2020-04-16 04:46:04.952827: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:46:17.415313: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 25, loss = 10.440353, source = [195  32], target = [195  32] (145.999 sec)
+2020-04-16 04:48:28.840961: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:48:43.464743: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 25, loss = 10.410404, source = [312  20], target = [312  20] (140.841 sec)
+2020-04-16 04:50:50.418480: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:51:07.516770: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 25, loss = 10.434122, source = [156  40], target = [156  40] (148.744 sec)
+2020-04-16 04:53:26.023375: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:53:46.132867: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 25, loss = 10.387249, source = [260  24], target = [260  24] (161.774 sec)
+2020-04-16 04:56:01.144322: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 04:56:14.340619: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 26, loss = 10.451308, source = [97 64], target = [97 64] (147.994 sec)
+2020-04-16 04:58:28.956883: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 04:58:46.776061: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 26, loss = 10.387159, source = [130  48], target = [130  48] (143.429 sec)
+2020-04-16 05:01:00.975864: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:01:20.744958: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 26, loss = 10.360784, source = [156  40], target = [156  40] (160.144 sec)
+2020-04-16 05:03:40.128633: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 05:03:52.516653: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 26, loss = 10.32025, source = [111  56], target = [111  56] (152.223 sec)
+2020-04-16 05:06:03.575209: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:06:14.850099: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 27, loss = 10.352546, source = [195  32], target = [195  32] (142.932 sec)
+2020-04-16 05:08:26.426729: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 05:08:45.360699: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 27, loss = 10.26374, source = [223  28], target = [223  28] (156.285 sec)
+2020-04-16 05:11:14.634136: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+2020-04-16 05:11:29.419855: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+INFO:tensorflow:step = 27, loss = 10.383807, source = [78 80], target = [78 77] (157.667 sec)
+2020-04-16 05:13:39.192816: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:13:49.779238: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 27, loss = 10.361505, source = [130  48], target = [130  48] (138.328 sec)
+2020-04-16 05:15:57.807323: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:16:13.060466: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 28, loss = 10.273329, source = [156  40], target = [156  40] (138.262 sec)
+2020-04-16 05:18:27.764944: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 05:18:41.629848: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 28, loss = 10.314327, source = [65 96], target = [65 90] (154.714 sec)
+2020-04-16 05:20:57.737886: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:21:11.893764: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 28, loss = 10.276621, source = [260  24], target = [260  24] (148.668 sec)
+2020-04-16 05:23:19.015934: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:23:31.806358: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 28, loss = 10.285891, source = [312  20], target = [312  20] (137.997 sec)
+2020-04-16 05:25:41.277521: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 05:25:58.489812: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 29, loss = 10.240468, source = [97 64], target = [97 63] (143.753 sec)
+2020-04-16 05:28:08.862769: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:28:29.155760: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 29, loss = 10.221492, source = [130  48], target = [130  48] (164.610 sec)
+2020-04-16 05:30:57.077418: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:31:09.695206: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 29, loss = 10.231658, source = [156  40], target = [156  40] (148.140 sec)
+2020-04-16 05:33:15.461979: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 05:33:30.155178: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 29, loss = 10.264595, source = [111  56], target = [111  56] (145.333 sec)
+2020-04-16 05:35:47.090076: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:36:05.929587: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 30, loss = 10.278909, source = [390  16], target = [390  16] (149.108 sec)
+2020-04-16 05:38:18.090385: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:38:40.107533: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 30, loss = 10.195797, source = [195  32], target = [195  32] (163.079 sec)
+2020-04-16 05:40:52.153601: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 05:41:03.153823: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 30, loss = 10.133881, source = [223  28], target = [223  28] (138.994 sec)
+2020-04-16 05:43:11.810970: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+2020-04-16 05:43:25.760343: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+INFO:tensorflow:step = 30, loss = 10.225442, source = [78 80], target = [78 79] (146.118 sec)
+2020-04-16 05:45:47.439620: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:46:06.863064: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 31, loss = 10.20228, source = [130  48], target = [130  48] (164.463 sec)
+2020-04-16 05:48:21.374871: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:48:33.630683: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 31, loss = 10.134683, source = [156  40], target = [156  40] (141.507 sec)
+2020-04-16 05:50:43.834974: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+2020-04-16 05:51:00.247111: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+INFO:tensorflow:step = 31, loss = 10.336923, source = [625  10], target = [625  10] (143.043 sec)
+2020-04-16 05:53:14.789721: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:53:34.445382: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 31, loss = 10.128085, source = [260  24], target = [260  24] (164.096 sec)
+2020-04-16 05:55:54.765758: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:56:06.816345: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 32, loss = 10.157255, source = [130  48], target = [130  48] (147.699 sec)
+2020-04-16 05:58:17.939856: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 05:58:30.128551: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 32, loss = 10.12364, source = [156  40], target = [156  40] (137.396 sec)
+2020-04-16 06:00:43.564422: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 06:01:03.922157: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 32, loss = 10.104507, source = [223  28], target = [223  28] (172.006 sec)
+2020-04-16 06:03:27.383107: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:03:39.207049: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 32, loss = 10.149636, source = [195  32], target = [195  32] (143.354 sec)
+2020-04-16 06:05:51.524545: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:06:04.158670: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 33, loss = 10.089056, source = [312  20], target = [312  20] (142.636 sec)
+2020-04-16 06:08:14.574178: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 06:08:33.233755: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 33, loss = 10.114115, source = [97 64], target = [97 63] (157.699 sec)
+2020-04-16 06:11:01.426262: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 06:11:13.868413: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 33, loss = 10.1740465, source = [111  56], target = [111  56] (154.606 sec)
+2020-04-16 06:13:25.742323: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+2020-04-16 06:13:37.969013: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+INFO:tensorflow:step = 33, loss = 10.109635, source = [781   8], target = [781   8] (137.692 sec)
+2020-04-16 06:15:45.609072: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:16:07.937060: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 34, loss = 10.074093, source = [156  40], target = [156  40] (156.255 sec)
+2020-04-16 06:18:29.890147: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 06:18:45.223839: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 34, loss = 10.005123, source = [78 79], target = [78 75] (153.757 sec)
+2020-04-16 06:20:54.336873: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 06:21:05.139154: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 34, loss = 10.074372, source = [130  48], target = [130  47] (133.839 sec)
+2020-04-16 06:23:05.736982: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:23:15.487544: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 34, loss = 10.236679, source = [520  12], target = [520  12] (129.164 sec)
+2020-04-16 06:25:20.400835: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:25:35.024632: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 35, loss = 10.063954, source = [156  40], target = [156  40] (155.079 sec)
+2020-04-16 06:27:53.106727: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:28:03.997876: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 35, loss = 9.998724, source = [260  24], target = [260  24] (134.206 sec)
+2020-04-16 06:30:05.622279: W tensorflow/core/framework/allocator.cc:101] Allocation of 5738655600 exceeds 10% of system memory.
+2020-04-16 06:30:19.477598: W tensorflow/core/framework/allocator.cc:101] Allocation of 5738655600 exceeds 10% of system memory.
+INFO:tensorflow:step = 35, loss = 10.0665, source = [111  56], target = [111  54] (138.883 sec)
+2020-04-16 06:32:30.006287: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 06:32:40.649935: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 35, loss = 9.981456, source = [223  28], target = [223  28] (136.488 sec)
+2020-04-16 06:34:43.183042: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:34:53.296837: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 36, loss = 10.040519, source = [195  32], target = [195  32] (143.299 sec)
+2020-04-16 06:37:13.009577: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 06:37:24.097011: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 36, loss = 9.963123, source = [130  48], target = [130  47] (141.849 sec)
+2020-04-16 06:39:27.969665: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:39:38.609070: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 36, loss = 9.984725, source = [156  40], target = [156  40] (136.925 sec)
+2020-04-16 06:41:53.726922: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+2020-04-16 06:42:06.358083: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+INFO:tensorflow:step = 36, loss = 9.994896, source = [78 80], target = [78 79] (144.192 sec)
+2020-04-16 06:44:06.947760: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 06:44:17.605127: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 37, loss = 10.019122, source = [97 64], target = [97 63] (132.279 sec)
+2020-04-16 06:46:28.554053: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:46:44.811024: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 37, loss = 9.9013, source = [312  20], target = [312  20] (148.374 sec)
+2020-04-16 06:48:47.871527: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 06:48:58.273075: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 37, loss = 9.8624735, source = [446  14], target = [446  14] (133.938 sec)
+2020-04-16 06:51:03.823411: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 06:51:18.917108: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 37, loss = 9.963392, source = [111  56], target = [111  56] (142.166 sec)
+2020-04-16 06:53:31.639401: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 06:53:41.652882: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 38, loss = 9.970481, source = [130  48], target = [130  47] (139.017 sec)
+2020-04-16 06:55:43.009631: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 06:55:57.817807: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 38, loss = 9.945754, source = [156  40], target = [156  40] (146.699 sec)
+2020-04-16 06:58:15.190535: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 06:58:26.402918: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 38, loss = 9.907069, source = [223  28], target = [223  28] (143.309 sec)
+2020-04-16 07:00:33.889913: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:00:43.692826: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 38, loss = 9.914406, source = [195  32], target = [195  32] (132.727 sec)
+2020-04-16 07:02:53.084875: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:03:09.274815: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 39, loss = 9.904836, source = [260  24], target = [260  24] (154.668 sec)
+2020-04-16 07:05:22.253324: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 07:05:32.396784: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 39, loss = 9.93322, source = [130  48], target = [130  47] (133.934 sec)
+2020-04-16 07:07:39.861130: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:07:55.423088: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 39, loss = 9.928818, source = [156  40], target = [156  40] (147.362 sec)
+2020-04-16 07:10:03.026841: W tensorflow/core/framework/allocator.cc:101] Allocation of 5725252000 exceeds 10% of system memory.
+2020-04-16 07:10:13.510846: W tensorflow/core/framework/allocator.cc:101] Allocation of 5725252000 exceeds 10% of system memory.
+INFO:tensorflow:step = 39, loss = 9.98636, source = [65 96], target = [65 92] (129.737 sec)
+2020-04-16 07:12:15.536830: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+2020-04-16 07:12:29.724573: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+INFO:tensorflow:step = 40, loss = 10.00014, source = [78 80], target = [78 79] (149.031 sec)
+2020-04-16 07:14:45.092102: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 07:14:55.589636: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 40, loss = 9.888718, source = [111  56], target = [111  56] (137.028 sec)
+2020-04-16 07:16:58.749041: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:17:08.793123: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 40, loss = 9.806388, source = [390  16], target = [390  16] (138.848 sec)
+2020-04-16 07:19:25.107489: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:19:40.399202: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 40, loss = 9.879294, source = [130  48], target = [130  48] (145.046 sec)
+2020-04-16 07:21:42.684234: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:21:54.571609: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 41, loss = 9.918234, source = [156  40], target = [156  40] (139.548 sec)
+2020-04-16 07:24:09.806907: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:24:26.188894: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 41, loss = 9.7864, source = [312  20], target = [312  20] (146.340 sec)
+2020-04-16 07:26:27.046005: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:26:37.426822: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 41, loss = 9.819535, source = [195  32], target = [195  32] (127.582 sec)
+2020-04-16 07:28:42.707501: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 07:28:57.321002: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 41, loss = 9.806834, source = [223  28], target = [223  28] (145.178 sec)
+2020-04-16 07:31:01.477353: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 07:31:10.275363: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 42, loss = 9.89856, source = [97 64], target = [97 64] (130.848 sec)
+2020-04-16 07:33:10.975222: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:33:22.589878: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 42, loss = 9.736034, source = [260  24], target = [260  24] (142.006 sec)
+2020-04-16 07:35:42.238693: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:35:54.803626: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 42, loss = 9.861223, source = [156  40], target = [156  40] (145.318 sec)
+2020-04-16 07:37:59.105501: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:38:10.383960: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 42, loss = 9.828427, source = [130  48], target = [130  48] (137.415 sec)
+2020-04-16 07:40:24.628075: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 07:40:39.131124: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 43, loss = 9.782451, source = [111  56], target = [111  56] (149.814 sec)
+2020-04-16 07:42:47.083719: W tensorflow/core/framework/allocator.cc:101] Allocation of 5526112800 exceeds 10% of system memory.
+2020-04-16 07:42:57.057827: W tensorflow/core/framework/allocator.cc:101] Allocation of 5526112800 exceeds 10% of system memory.
+INFO:tensorflow:step = 43, loss = 9.816436, source = [78 80], target = [78 74] (127.884 sec)
+2020-04-16 07:45:02.917090: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:45:18.185999: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 43, loss = 9.793942, source = [195  32], target = [195  32] (151.095 sec)
+2020-04-16 07:47:26.006381: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:47:36.550898: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 43, loss = 9.798796, source = [156  40], target = [156  40] (133.241 sec)
+2020-04-16 07:49:39.410596: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 07:49:55.036845: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 44, loss = 9.711079, source = [223  28], target = [223  28] (139.258 sec)
+2020-04-16 07:52:04.723964: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:52:15.917418: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 44, loss = 9.721836, source = [260  24], target = [260  24] (139.539 sec)
+2020-04-16 07:54:16.558484: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:54:27.399997: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 44, loss = 9.726643, source = [312  20], target = [312  20] (133.759 sec)
+2020-04-16 07:56:36.832280: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:56:51.324460: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 44, loss = 9.794625, source = [130  48], target = [130  48] (155.062 sec)
+2020-04-16 07:59:07.417918: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 07:59:18.576892: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 45, loss = 9.7813635, source = [156  40], target = [156  40] (131.270 sec)
+2020-04-16 08:01:15.868005: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 08:01:29.926608: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 45, loss = 9.858775, source = [111  56], target = [111  56] (129.957 sec)
+2020-04-16 08:03:33.138190: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:03:49.745785: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 45, loss = 9.728853, source = [195  32], target = [195  32] (139.600 sec)
+2020-04-16 08:05:48.700993: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 08:05:58.320361: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 45, loss = 9.775264, source = [97 64], target = [97 64] (132.569 sec)
+2020-04-16 08:07:57.511900: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:08:07.008361: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 46, loss = 9.742382, source = [130  48], target = [130  48] (131.948 sec)
+2020-04-16 08:10:16.211303: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:10:33.978988: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 46, loss = 9.727657, source = [156  40], target = [156  40] (159.081 sec)
+2020-04-16 08:12:53.127053: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 08:13:06.506592: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 46, loss = 9.694928, source = [223  28], target = [223  28] (135.500 sec)
+2020-04-16 08:15:12.233743: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:15:29.008498: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 46, loss = 9.783514, source = [520  12], target = [520  12] (148.465 sec)
+2020-04-16 08:17:36.210644: W tensorflow/core/framework/allocator.cc:101] Allocation of 5675467200 exceeds 10% of system memory.
+2020-04-16 08:17:46.443457: W tensorflow/core/framework/allocator.cc:101] Allocation of 5675467200 exceeds 10% of system memory.
+INFO:tensorflow:step = 47, loss = 9.830462, source = [78 80], target = [78 76] (127.898 sec)
+2020-04-16 08:19:41.481969: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:19:51.673735: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 47, loss = 9.746551, source = [130  48], target = [130  48] (134.022 sec)
+2020-04-16 08:22:04.145659: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:22:17.489972: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 47, loss = 9.731083, source = [156  40], target = [156  40] (142.272 sec)
+2020-04-16 08:24:17.864862: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 08:24:28.684716: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 47, loss = 9.803484, source = [111  56], target = [111  56] (131.861 sec)
+2020-04-16 08:26:35.572805: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:26:50.526104: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 48, loss = 9.608977, source = [260  24], target = [260  24] (142.925 sec)
+2020-04-16 08:28:53.217356: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+2020-04-16 08:29:04.036875: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+INFO:tensorflow:step = 48, loss = 9.729199, source = [625  10], target = [625  10] (126.737 sec)
+2020-04-16 08:31:08.918057: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:31:24.097424: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 48, loss = 9.698116, source = [195  32], target = [195  32] (147.454 sec)
+2020-04-16 08:33:28.646882: W tensorflow/core/framework/allocator.cc:101] Allocation of 5351866000 exceeds 10% of system memory.
+2020-04-16 08:33:37.628492: W tensorflow/core/framework/allocator.cc:101] Allocation of 5351866000 exceeds 10% of system memory.
+INFO:tensorflow:step = 48, loss = 9.802035, source = [65 96], target = [65 86] (120.811 sec)
+2020-04-16 08:35:27.354526: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:35:39.285235: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 49, loss = 9.708172, source = [156  40], target = [156  40] (133.248 sec)
+2020-04-16 08:37:48.821057: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 08:38:02.997868: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 49, loss = 9.838501, source = [130  48], target = [130  47] (137.193 sec)
+2020-04-16 08:39:58.341946: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:40:09.303264: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 49, loss = 9.621109, source = [312  20], target = [312  20] (130.137 sec)
+2020-04-16 08:42:15.692907: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 08:42:30.639100: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 49, loss = 9.6314335, source = [223  28], target = [223  28] (146.673 sec)
+2020-04-16 08:44:35.498854: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 08:44:45.837563: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 50, loss = 9.714347, source = [97 64], target = [97 64] (128.242 sec)
+2020-04-16 08:46:44.985351: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:46:59.467800: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 50, loss = 9.707644, source = [156  40], target = [156  40] (141.385 sec)
+2020-04-16 08:49:07.420640: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 08:49:17.322221: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 50, loss = 9.750659, source = [111  56], target = [111  55] (138.491 sec)
+2020-04-16 08:51:26.848326: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:51:42.653610: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 50, loss = 9.557983, source = [390  16], target = [390  16] (157.116 sec)
+2020-04-16 08:54:02.640530: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 08:54:13.928612: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 51, loss = 9.484743, source = [446  14], target = [446  14] (143.712 sec)
+2020-04-16 08:56:31.560800: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 08:56:46.212268: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 51, loss = 9.553309, source = [260  24], target = [260  24] (149.237 sec)
+2020-04-16 08:58:56.405499: W tensorflow/core/framework/allocator.cc:101] Allocation of 5302081200 exceeds 10% of system memory.
+2020-04-16 08:59:06.779033: W tensorflow/core/framework/allocator.cc:101] Allocation of 5302081200 exceeds 10% of system memory.
+INFO:tensorflow:step = 51, loss = 9.755383, source = [78 80], target = [78 71] (133.691 sec)
+2020-04-16 09:01:11.212212: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:01:27.174955: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 51, loss = 9.63269, source = [195  32], target = [195  32] (152.723 sec)
+2020-04-16 09:03:41.115720: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 09:03:51.901924: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 52, loss = 9.647274, source = [130  48], target = [130  47] (134.785 sec)
+2020-04-16 09:05:59.128925: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:06:14.697250: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 52, loss = 9.666116, source = [156  40], target = [156  40] (153.243 sec)
+2020-04-16 09:08:32.742179: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+2020-04-16 09:08:43.521523: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+INFO:tensorflow:step = 52, loss = 9.1790085, source = [781   8], target = [781   8] (138.355 sec)
+2020-04-16 09:10:45.487532: W tensorflow/core/framework/allocator.cc:101] Allocation of 5107729000 exceeds 10% of system memory.
+2020-04-16 09:10:54.432843: W tensorflow/core/framework/allocator.cc:101] Allocation of 5107729000 exceeds 10% of system memory.
+INFO:tensorflow:step = 52, loss = 9.854776, source = [ 55 101], target = [55 97] (115.047 sec)
+2020-04-16 09:12:45.069221: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 09:13:00.850940: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 53, loss = 9.600454, source = [223  28], target = [223  28] (142.236 sec)
+2020-04-16 09:15:08.928546: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 09:15:18.679890: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 53, loss = 9.714118, source = [111  56], target = [111  56] (134.908 sec)
+2020-04-16 09:17:18.217093: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:17:28.103624: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 53, loss = 9.684593, source = [130  48], target = [130  48] (129.278 sec)
+2020-04-16 09:19:26.679820: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:19:41.117234: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 53, loss = 9.63153, source = [156  40], target = [156  40] (145.343 sec)
+2020-04-16 09:21:54.093717: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:22:04.490212: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 54, loss = 9.440418, source = [312  20], target = [312  20] (128.336 sec)
+2020-04-16 09:24:00.787196: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 09:24:09.894729: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 54, loss = 9.678888, source = [97 64], target = [97 64] (125.109 sec)
+2020-04-16 09:26:05.242291: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:26:19.590698: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 54, loss = 9.479477, source = [260  24], target = [260  24] (134.028 sec)
+2020-04-16 09:28:28.576822: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:28:40.276790: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 54, loss = 9.581067, source = [195  32], target = [195  32] (138.336 sec)
+2020-04-16 09:30:39.386082: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+2020-04-16 09:30:49.258319: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+INFO:tensorflow:step = 55, loss = 9.706479, source = [78 80], target = [78 77] (128.061 sec)
+2020-04-16 09:32:54.061584: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:33:09.039160: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 55, loss = 9.609995, source = [130  48], target = [130  48] (149.491 sec)
+2020-04-16 09:35:16.518604: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:35:27.457279: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 55, loss = 9.612196, source = [156  40], target = [156  40] (128.447 sec)
+2020-04-16 09:37:25.339564: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 09:37:41.117811: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 55, loss = 9.509472, source = [223  28], target = [223  28] (135.083 sec)
+2020-04-16 09:39:47.913584: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 09:40:00.955078: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 56, loss = 9.662687, source = [111  56], target = [111  56] (144.637 sec)
+2020-04-16 09:42:04.797448: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:42:15.501916: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 56, loss = 9.631604, source = [156  40], target = [156  40] (129.437 sec)
+2020-04-16 09:44:17.145044: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 09:44:30.952507: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 56, loss = 9.654832, source = [130  48], target = [130  47] (137.706 sec)
+2020-04-16 09:46:32.549469: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:46:43.350149: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 56, loss = 9.53464, source = [195  32], target = [195  32] (127.242 sec)
+2020-04-16 09:48:37.912123: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:48:48.877783: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 57, loss = 9.509164, source = [260  24], target = [260  24] (126.266 sec)
+2020-04-16 09:50:52.473703: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:51:08.233439: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 57, loss = 9.399672, source = [312  20], target = [312  20] (143.677 sec)
+2020-04-16 09:53:09.624125: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 09:53:19.740987: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 57, loss = 9.580931, source = [156  40], target = [156  40] (131.728 sec)
+2020-04-16 09:55:18.723516: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 09:55:28.571608: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 57, loss = 9.460291, source = [223  28], target = [223  28] (125.380 sec)
+2020-04-16 09:57:27.164702: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 09:57:42.585432: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 58, loss = 9.683424, source = [111  56], target = [111  56] (140.204 sec)
+2020-04-16 09:59:50.480932: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 10:00:01.369364: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 58, loss = 9.605572, source = [97 64], target = [97 64] (131.153 sec)
+2020-04-16 10:01:58.576812: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+2020-04-16 10:02:08.539682: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+INFO:tensorflow:step = 58, loss = 9.656069, source = [78 80], target = [78 77] (128.812 sec)
+2020-04-16 10:04:15.059604: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:04:30.328082: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 58, loss = 9.64017, source = [130  48], target = [130  48] (146.725 sec)
+2020-04-16 10:06:31.553328: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:06:42.890261: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 59, loss = 9.513551, source = [156  40], target = [156  40] (124.772 sec)
+2020-04-16 10:08:38.492420: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:08:54.167099: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 59, loss = 9.5293045, source = [520  12], target = [520  12] (144.990 sec)
+2020-04-16 10:11:03.089963: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:11:13.059266: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 59, loss = 9.560463, source = [195  32], target = [195  32] (129.482 sec)
+2020-04-16 10:13:11.390330: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:13:21.204074: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 59, loss = 9.404166, source = [260  24], target = [260  24] (115.849 sec)
+2020-04-16 10:15:11.805060: W tensorflow/core/framework/allocator.cc:101] Allocation of 5787483000 exceeds 10% of system memory.
+2020-04-16 10:15:25.253440: W tensorflow/core/framework/allocator.cc:101] Allocation of 5787483000 exceeds 10% of system memory.
+INFO:tensorflow:step = 60, loss = 9.7363615, source = [65 96], target = [65 93] (133.282 sec)
+2020-04-16 10:17:22.768104: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 10:17:33.349603: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 60, loss = 9.54138, source = [111  56], target = [111  56] (124.954 sec)
+2020-04-16 10:19:26.682458: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:19:39.257223: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 60, loss = 9.552303, source = [130  48], target = [130  48] (133.854 sec)
+2020-04-16 10:21:46.721359: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:21:57.623806: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 60, loss = 9.602571, source = [156  40], target = [156  40] (129.409 sec)
+2020-04-16 10:23:47.119139: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:23:56.410044: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 61, loss = 9.345906, source = [390  16], target = [390  16] (116.856 sec)
+2020-04-16 10:25:47.374880: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 10:26:03.159303: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 61, loss = 9.393828, source = [223  28], target = [223  28] (142.309 sec)
+2020-04-16 10:28:09.929449: W tensorflow/core/framework/allocator.cc:101] Allocation of 5451435600 exceeds 10% of system memory.
+2020-04-16 10:28:19.356431: W tensorflow/core/framework/allocator.cc:101] Allocation of 5451435600 exceeds 10% of system memory.
+INFO:tensorflow:step = 61, loss = 9.57876, source = [78 80], target = [78 73] (119.187 sec)
+2020-04-16 10:30:13.415429: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:30:28.105641: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 61, loss = 9.381583, source = [312  20], target = [312  20] (139.215 sec)
+2020-04-16 10:32:25.859394: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 10:32:35.957133: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 62, loss = 9.566641, source = [130  48], target = [130  47] (121.019 sec)
+2020-04-16 10:34:30.077650: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:34:44.741084: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 62, loss = 9.471336, source = [156  40], target = [156  40] (139.179 sec)
+2020-04-16 10:36:48.719994: W tensorflow/core/framework/allocator.cc:101] Allocation of 5664935800 exceeds 10% of system memory.
+2020-04-16 10:36:57.976676: W tensorflow/core/framework/allocator.cc:101] Allocation of 5664935800 exceeds 10% of system memory.
+INFO:tensorflow:step = 62, loss = 9.595097, source = [97 64], target = [97 61] (123.614 sec)
+2020-04-16 10:38:50.918056: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:39:01.767083: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 62, loss = 9.47312, source = [195  32], target = [195  32] (124.944 sec)
+2020-04-16 10:41:04.142741: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 10:41:18.117095: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 63, loss = 9.56257, source = [111  56], target = [111  56] (141.071 sec)
+2020-04-16 10:43:16.270996: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:43:26.009305: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 63, loss = 9.573892, source = [130  48], target = [130  48] (125.091 sec)
+2020-04-16 10:45:22.087087: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:45:33.068953: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 63, loss = 9.542492, source = [156  40], target = [156  40] (131.318 sec)
+2020-04-16 10:47:39.090403: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:47:50.620160: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 63, loss = 9.358, source = [260  24], target = [260  24] (132.137 sec)
+2020-04-16 10:49:44.761300: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 10:49:55.697333: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 64, loss = 9.342791, source = [446  14], target = [446  14] (130.005 sec)
+2020-04-16 10:52:03.149539: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 10:52:16.060419: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 64, loss = 9.4044075, source = [223  28], target = [223  28] (136.992 sec)
+2020-04-16 10:54:12.520118: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+2020-04-16 10:54:22.375369: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+INFO:tensorflow:step = 64, loss = 9.655791, source = [78 80], target = [78 78] (125.505 sec)
+2020-04-16 10:56:24.925685: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+2020-04-16 10:56:39.384058: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+INFO:tensorflow:step = 64, loss = 9.437368, source = [625  10], target = [625  10] (139.844 sec)
+2020-04-16 10:58:36.168803: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 10:58:45.018493: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 65, loss = 9.478208, source = [156  40], target = [156  40] (124.310 sec)
+2020-04-16 11:00:40.658917: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:00:52.550015: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 65, loss = 9.408191, source = [195  32], target = [195  32] (129.873 sec)
+2020-04-16 11:02:59.608862: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 11:03:13.945702: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 65, loss = 9.547738, source = [130  48], target = [130  47] (134.906 sec)
+2020-04-16 11:05:07.195138: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:05:16.990026: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 65, loss = 9.274753, source = [312  20], target = [312  20] (127.869 sec)
+2020-04-16 11:07:15.446450: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 11:07:25.277539: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 66, loss = 9.594737, source = [111  56], target = [111  55] (128.931 sec)
+2020-04-16 11:09:32.957895: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 11:09:46.945536: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 66, loss = 9.5814705, source = [97 64], target = [97 63] (138.744 sec)
+2020-04-16 11:11:40.477394: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:11:50.520389: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 66, loss = 9.412003, source = [156  40], target = [156  40] (125.771 sec)
+2020-04-16 11:13:46.773674: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 11:13:57.762842: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 66, loss = 9.377087, source = [223  28], target = [223  28] (125.071 sec)
+2020-04-16 11:16:00.372723: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:16:15.896883: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 67, loss = 9.32053, source = [260  24], target = [260  24] (140.302 sec)
+2020-04-16 11:18:11.817798: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:18:21.560884: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 67, loss = 9.450235, source = [195  32], target = [195  32] (121.668 sec)
+2020-04-16 11:20:13.839280: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:20:25.105244: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 67, loss = 9.513388, source = [130  48], target = [130  48] (124.109 sec)
+2020-04-16 11:22:27.308229: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:22:42.483645: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 67, loss = 9.477814, source = [156  40], target = [156  40] (141.865 sec)
+2020-04-16 11:24:40.238727: W tensorflow/core/framework/allocator.cc:101] Allocation of 5738655600 exceeds 10% of system memory.
+2020-04-16 11:24:49.266964: W tensorflow/core/framework/allocator.cc:101] Allocation of 5738655600 exceeds 10% of system memory.
+INFO:tensorflow:step = 68, loss = 9.522718, source = [111  56], target = [111  54] (120.493 sec)
+2020-04-16 11:26:40.858235: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 11:26:52.760903: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 68, loss = 9.515111, source = [78 80], target = [78 75] (134.669 sec)
+2020-04-16 11:29:02.026058: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:29:12.552658: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 68, loss = 9.254342, source = [312  20], target = [312  20] (135.645 sec)
+2020-04-16 11:31:12.378267: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 11:31:23.161184: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 68, loss = 9.412828, source = [223  28], target = [223  28] (133.963 sec)
+2020-04-16 11:33:35.067089: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:33:51.155152: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 69, loss = 9.472797, source = [130  48], target = [130  48] (152.376 sec)
+2020-04-16 11:35:57.806317: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:36:08.814340: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 69, loss = 9.460569, source = [156  40], target = [156  40] (133.306 sec)
+2020-04-16 11:38:11.680515: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 11:38:22.484843: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 69, loss = 9.563392, source = [97 64], target = [97 63] (141.322 sec)
+2020-04-16 11:40:39.466529: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:40:55.857245: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 69, loss = 9.274099, source = [260  24], target = [260  24] (149.048 sec)
+2020-04-16 11:43:01.779104: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+2020-04-16 11:43:12.695067: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+INFO:tensorflow:step = 70, loss = 8.89422, source = [781   8], target = [781   8] (131.606 sec)
+2020-04-16 11:45:21.491583: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:45:37.209014: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 70, loss = 9.480601, source = [130  48], target = [130  48] (145.779 sec)
+2020-04-16 11:47:39.782928: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:47:49.001996: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 70, loss = 9.458453, source = [156  40], target = [156  40] (129.385 sec)
+2020-04-16 11:49:57.549593: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:50:11.448186: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 70, loss = 9.378866, source = [195  32], target = [195  32] (143.622 sec)
+2020-04-16 11:52:11.852598: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 11:52:21.425140: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 71, loss = 9.520274, source = [111  56], target = [111  56] (129.336 sec)
+2020-04-16 11:54:26.402282: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:54:41.746346: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 71, loss = 9.179814, source = [390  16], target = [390  16] (147.361 sec)
+2020-04-16 11:56:57.175307: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+2020-04-16 11:57:07.928873: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+INFO:tensorflow:step = 71, loss = 9.516913, source = [78 80], target = [78 77] (134.822 sec)
+2020-04-16 11:59:04.547874: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 11:59:18.245297: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 71, loss = 9.482011, source = [130  48], target = [130  48] (148.306 sec)
+2020-04-16 12:01:41.620150: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:01:53.297114: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 72, loss = 9.391277, source = [156  40], target = [156  40] (140.169 sec)
+2020-04-16 12:03:51.044656: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:04:02.154426: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 72, loss = 9.408169, source = [520  12], target = [520  12] (138.082 sec)
+2020-04-16 12:06:20.135374: W tensorflow/core/framework/allocator.cc:101] Allocation of 5165173000 exceeds 10% of system memory.
+2020-04-16 12:06:32.932608: W tensorflow/core/framework/allocator.cc:101] Allocation of 5165173000 exceeds 10% of system memory.
+INFO:tensorflow:step = 72, loss = 9.6420765, source = [65 95], target = [65 83] (132.828 sec)
+2020-04-16 12:08:24.697717: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 12:08:35.290442: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 72, loss = 9.348215, source = [223  28], target = [223  28] (134.280 sec)
+2020-04-16 12:10:42.383821: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:10:56.047531: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 73, loss = 9.272619, source = [260  24], target = [260  24] (150.839 sec)
+2020-04-16 12:13:07.811514: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:13:17.967828: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 73, loss = 9.395706, source = [156  40], target = [156  40] (127.290 sec)
+2020-04-16 12:15:22.816153: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 12:15:38.161343: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 73, loss = 9.456146, source = [97 64], target = [97 64] (149.579 sec)
+2020-04-16 12:17:45.199432: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:17:55.068207: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 73, loss = 9.21668, source = [312  20], target = [312  20] (127.327 sec)
+2020-04-16 12:19:52.827951: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 12:20:04.885439: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 74, loss = 9.46962, source = [111  56], target = [111  56] (141.674 sec)
+2020-04-16 12:22:18.822785: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:22:28.909524: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 74, loss = 9.342747, source = [195  32], target = [195  32] (135.235 sec)
+2020-04-16 12:24:30.327769: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:24:41.192786: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 74, loss = 9.403087, source = [130  48], target = [130  48] (128.946 sec)
+2020-04-16 12:26:47.326738: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+2020-04-16 12:27:03.838749: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+INFO:tensorflow:step = 74, loss = 9.539247, source = [78 80], target = [78 78] (149.669 sec)
+2020-04-16 12:29:07.895612: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+2020-04-16 12:29:18.270414: W tensorflow/core/framework/allocator.cc:101] Allocation of 5824821600 exceeds 10% of system memory.
+INFO:tensorflow:step = 75, loss = 9.367068, source = [156  40], target = [156  39] (132.042 sec)
+2020-04-16 12:31:18.798636: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 12:31:33.203541: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 75, loss = 9.326647, source = [223  28], target = [223  28] (127.586 sec)
+2020-04-16 12:33:35.010855: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:33:48.402589: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 75, loss = 9.226287, source = [260  24], target = [260  24] (137.528 sec)
+2020-04-16 12:35:44.663610: W tensorflow/core/framework/allocator.cc:101] Allocation of 5725252000 exceeds 10% of system memory.
+2020-04-16 12:35:53.984868: W tensorflow/core/framework/allocator.cc:101] Allocation of 5725252000 exceeds 10% of system memory.
+INFO:tensorflow:step = 75, loss = 9.308526, source = [130  48], target = [130  46] (131.359 sec)
+2020-04-16 12:38:04.770267: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:38:20.158840: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 76, loss = 9.40047, source = [156  40], target = [156  40] (142.309 sec)
+2020-04-16 12:40:19.558347: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 12:40:31.088233: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 76, loss = 9.420468, source = [111  56], target = [111  56] (129.520 sec)
+2020-04-16 12:42:37.630808: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:42:53.755382: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 76, loss = 9.328334, source = [195  32], target = [195  32] (148.135 sec)
+2020-04-16 12:44:57.138036: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 12:45:07.456958: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 76, loss = 9.14649, source = [446  14], target = [446  14] (131.619 sec)
+2020-04-16 12:47:17.143058: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:47:32.552578: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 77, loss = 9.352781, source = [156  40], target = [156  40] (147.800 sec)
+2020-04-16 12:49:36.192776: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 12:49:46.617495: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 77, loss = 9.390317, source = [130  48], target = [130  47] (126.643 sec)
+2020-04-16 12:51:50.819051: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:52:05.617204: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 77, loss = 9.170144, source = [312  20], target = [312  20] (143.840 sec)
+2020-04-16 12:54:06.766599: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 12:54:17.519145: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 77, loss = 9.230099, source = [223  28], target = [223  28] (128.857 sec)
+2020-04-16 12:56:18.817212: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 12:56:33.247259: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 78, loss = 9.483129, source = [97 64], target = [97 63] (149.940 sec)
+2020-04-16 12:58:48.580374: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 12:58:59.057698: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 78, loss = 9.374042, source = [156  40], target = [156  40] (137.234 sec)
+2020-04-16 13:01:11.588017: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+2020-04-16 13:01:25.627262: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+INFO:tensorflow:step = 78, loss = 9.384513, source = [78 80], target = [78 77] (141.195 sec)
+2020-04-16 13:03:27.494961: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 13:03:38.234512: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 78, loss = 9.435045, source = [111  56], target = [111  56] (127.635 sec)
+2020-04-16 13:05:31.234249: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:05:42.092935: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 79, loss = 9.191206, source = [260  24], target = [260  24] (147.865 sec)
+2020-04-16 13:08:02.814687: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:08:12.731230: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 79, loss = 9.306749, source = [195  32], target = [195  32] (132.143 sec)
+2020-04-16 13:10:11.803464: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:10:22.055503: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 79, loss = 9.381745, source = [130  48], target = [130  48] (138.977 sec)
+2020-04-16 13:12:35.957257: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:12:52.052412: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 79, loss = 9.344151, source = [156  40], target = [156  40] (154.649 sec)
+2020-04-16 13:15:06.765479: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 13:15:16.921997: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 80, loss = 9.260855, source = [223  28], target = [223  28] (138.347 sec)
+2020-04-16 13:17:28.110203: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:17:43.480683: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 80, loss = 9.099502, source = [390  16], target = [390  16] (150.815 sec)
+2020-04-16 13:19:56.649959: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+2020-04-16 13:20:08.116846: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+INFO:tensorflow:step = 80, loss = 9.387876, source = [625  10], target = [625  10] (140.326 sec)
+2020-04-16 13:22:24.004733: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 13:22:39.689203: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 80, loss = 9.376688, source = [130  48], target = [130  47] (156.320 sec)
+2020-04-16 13:24:52.256314: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:25:03.417882: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 81, loss = 9.385207, source = [156  40], target = [156  40] (138.201 sec)
+2020-04-16 13:27:18.769649: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 13:27:35.384668: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 81, loss = 9.387621, source = [111  56], target = [111  56] (152.688 sec)
+2020-04-16 13:29:41.100076: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:29:53.018092: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 81, loss = 9.219538, source = [260  24], target = [260  24] (144.881 sec)
+2020-04-16 13:32:15.114719: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:32:28.810112: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 81, loss = 9.09831, source = [312  20], target = [312  20] (147.830 sec)
+2020-04-16 13:34:36.728829: W tensorflow/core/framework/allocator.cc:101] Allocation of 5675467200 exceeds 10% of system memory.
+2020-04-16 13:34:46.941333: W tensorflow/core/framework/allocator.cc:101] Allocation of 5675467200 exceeds 10% of system memory.
+INFO:tensorflow:step = 82, loss = 9.486576, source = [78 80], target = [78 76] (132.406 sec)
+2020-04-16 13:36:53.229427: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:37:09.031139: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 82, loss = 9.252401, source = [195  32], target = [195  32] (150.860 sec)
+2020-04-16 13:39:17.463831: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:39:27.433547: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 82, loss = 9.320963, source = [130  48], target = [130  48] (131.370 sec)
+2020-04-16 13:41:35.195124: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:41:52.013421: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 82, loss = 9.299098, source = [156  40], target = [156  40] (149.018 sec)
+2020-04-16 13:44:00.445615: W tensorflow/core/framework/allocator.cc:101] Allocation of 5165173000 exceeds 10% of system memory.
+2020-04-16 13:44:10.158848: W tensorflow/core/framework/allocator.cc:101] Allocation of 5165173000 exceeds 10% of system memory.
+INFO:tensorflow:step = 83, loss = 9.475687, source = [65 96], target = [65 83] (125.771 sec)
+2020-04-16 13:46:04.238052: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 13:46:16.950990: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 83, loss = 9.4194355, source = [97 64], target = [97 64] (140.640 sec)
+2020-04-16 13:48:32.609862: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 13:48:43.454831: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 83, loss = 9.189771, source = [223  28], target = [223  28] (143.554 sec)
+2020-04-16 13:50:48.803241: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 13:50:59.029119: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 83, loss = 9.35768, source = [111  56], target = [111  56] (142.286 sec)
+2020-04-16 13:53:14.436837: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:53:25.068279: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 84, loss = 9.421484, source = [130  48], target = [130  48] (133.297 sec)
+2020-04-16 13:55:22.365829: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:55:33.628502: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 84, loss = 9.263885, source = [156  40], target = [156  40] (135.633 sec)
+2020-04-16 13:57:46.935182: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 13:58:03.177242: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 84, loss = 9.2014675, source = [520  12], target = [520  12] (144.219 sec)
+2020-04-16 14:00:03.523985: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:00:14.360775: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 84, loss = 9.225823, source = [195  32], target = [195  32] (131.509 sec)
+2020-04-16 14:02:19.340308: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:02:34.729548: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 85, loss = 9.109748, source = [260  24], target = [260  24] (142.768 sec)
+2020-04-16 14:04:44.758790: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:04:55.750271: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 85, loss = 9.326328, source = [156  40], target = [156  40] (139.437 sec)
+2020-04-16 14:06:56.499770: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:07:07.578197: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 85, loss = 9.306844, source = [130  48], target = [130  48] (131.396 sec)
+2020-04-16 14:09:07.455226: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:09:19.144526: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 85, loss = 9.130042, source = [312  20], target = [312  20] (128.623 sec)
+2020-04-16 14:11:23.382614: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 14:11:41.211896: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 86, loss = 9.347336, source = [111  56], target = [111  55] (150.312 sec)
+2020-04-16 14:13:50.187628: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 14:13:59.544419: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 86, loss = 9.325044, source = [78 80], target = [78 75] (129.429 sec)
+2020-04-16 14:15:55.998164: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 14:16:06.419534: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 86, loss = 9.200915, source = [223  28], target = [223  28] (129.058 sec)
+2020-04-16 14:18:15.846475: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:18:30.701115: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 86, loss = 9.2637205, source = [156  40], target = [156  40] (154.558 sec)
+2020-04-16 14:20:40.456037: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+2020-04-16 14:20:50.733416: W tensorflow/core/framework/allocator.cc:101] Allocation of 5981835200 exceeds 10% of system memory.
+INFO:tensorflow:step = 87, loss = 8.682359, source = [781   8], target = [781   8] (129.277 sec)
+2020-04-16 14:22:55.638746: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:23:12.070942: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 87, loss = 9.203975, source = [195  32], target = [195  32] (151.965 sec)
+2020-04-16 14:25:22.774033: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 14:25:34.745502: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 87, loss = 9.41948, source = [97 64], target = [97 64] (125.081 sec)
+2020-04-16 14:27:22.334805: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 14:27:33.092695: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 87, loss = 9.321132, source = [130  48], target = [130  47] (111.503 sec)
+2020-04-16 14:29:22.183649: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:29:35.636559: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 88, loss = 9.313991, source = [156  40], target = [156  40] (125.905 sec)
+2020-04-16 14:31:27.772541: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:31:37.504125: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 88, loss = 9.15279, source = [260  24], target = [260  24] (113.525 sec)
+2020-04-16 14:33:15.402293: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 14:33:23.140243: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 88, loss = 9.284828, source = [111  56], target = [111  56] (106.414 sec)
+2020-04-16 14:35:02.920270: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 14:35:12.381623: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 88, loss = 9.166573, source = [223  28], target = [223  28] (108.846 sec)
+2020-04-16 14:36:48.533970: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+2020-04-16 14:36:56.997111: W tensorflow/core/framework/allocator.cc:101] Allocation of 5899498800 exceeds 10% of system memory.
+INFO:tensorflow:step = 89, loss = 9.29048, source = [78 80], target = [78 79] (103.152 sec)
+2020-04-16 14:38:30.896642: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 14:38:39.053201: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 89, loss = 9.075079, source = [446  14], target = [446  14] (96.813 sec)
+2020-04-16 14:40:14.448889: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:40:27.246528: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 89, loss = 9.339731, source = [130  48], target = [130  48] (117.406 sec)
+2020-04-16 14:42:10.324215: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:42:20.142293: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 89, loss = 9.213134, source = [156  40], target = [156  40] (112.189 sec)
+2020-04-16 14:43:57.256592: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:44:05.445571: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 90, loss = 9.024796, source = [312  20], target = [312  20] (97.010 sec)
+2020-04-16 14:45:37.834213: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:45:46.680420: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 90, loss = 9.157943, source = [195  32], target = [195  32] (98.712 sec)
+2020-04-16 14:47:12.638735: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:47:20.119619: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 90, loss = 9.011303, source = [390  16], target = [390  16] (93.219 sec)
+2020-04-16 14:48:48.575680: W tensorflow/core/framework/allocator.cc:101] Allocation of 5738655600 exceeds 10% of system memory.
+2020-04-16 14:48:55.620426: W tensorflow/core/framework/allocator.cc:101] Allocation of 5738655600 exceeds 10% of system memory.
+INFO:tensorflow:step = 90, loss = 9.288114, source = [111  56], target = [111  54] (90.125 sec)
+2020-04-16 14:50:15.480905: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:50:22.521205: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 91, loss = 9.199027, source = [156  40], target = [156  40] (89.837 sec)
+2020-04-16 14:51:54.183202: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 14:52:04.593981: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 91, loss = 9.248768, source = [130  48], target = [130  47] (101.679 sec)
+2020-04-16 14:53:33.900435: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 14:53:42.218408: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 91, loss = 9.329731, source = [97 64], target = [97 64] (110.867 sec)
+2020-04-16 14:55:22.572274: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 14:55:30.914714: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 91, loss = 9.11806, source = [260  24], target = [260  24] (115.145 sec)
+2020-04-16 14:57:24.100375: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 14:57:38.649935: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 92, loss = 9.149421, source = [223  28], target = [223  28] (130.296 sec)
+2020-04-16 14:59:27.748158: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 14:59:36.546554: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 92, loss = 9.247491, source = [78 79], target = [78 75] (111.359 sec)
+2020-04-16 15:01:18.422093: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:01:27.160731: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 92, loss = 9.222554, source = [156  40], target = [156  40] (114.582 sec)
+INFO:tensorflow:step = 92, loss = 9.390682, source = [65 96], target = [65 73] (106.407 sec)
+2020-04-16 15:05:04.044866: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:05:14.275425: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 93, loss = 9.218571, source = [195  32], target = [195  32] (120.721 sec)
+2020-04-16 15:07:01.040864: W tensorflow/core/framework/allocator.cc:101] Allocation of 5632384200 exceeds 10% of system memory.
+2020-04-16 15:07:10.674122: W tensorflow/core/framework/allocator.cc:101] Allocation of 5632384200 exceeds 10% of system memory.
+INFO:tensorflow:step = 93, loss = 9.242539, source = [111  56], target = [111  53] (108.836 sec)
+2020-04-16 15:08:56.288494: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:09:11.546903: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 93, loss = 8.956339, source = [312  20], target = [312  20] (130.179 sec)
+2020-04-16 15:11:00.080539: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:11:08.529491: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 93, loss = 9.231496, source = [130  48], target = [130  48] (114.618 sec)
+2020-04-16 15:12:54.511311: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:13:03.498745: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 94, loss = 9.1718855, source = [156  40], target = [156  40] (115.493 sec)
+2020-04-16 15:14:49.503843: W tensorflow/core/framework/allocator.cc:101] Allocation of 4791787000 exceeds 10% of system memory.
+2020-04-16 15:14:57.719303: W tensorflow/core/framework/allocator.cc:101] Allocation of 4791787000 exceeds 10% of system memory.
+INFO:tensorflow:step = 94, loss = 9.483074, source = [ 55 101], target = [55 91] (98.792 sec)
+2020-04-16 15:16:28.880825: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 15:16:43.637883: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 94, loss = 9.052159, source = [223  28], target = [223  28] (121.484 sec)
+2020-04-16 15:18:37.478082: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:18:50.182329: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 94, loss = 9.017856, source = [260  24], target = [260  24] (125.500 sec)
+2020-04-16 15:20:36.591418: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:20:45.173646: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 95, loss = 9.213022, source = [130  48], target = [130  48] (115.031 sec)
+2020-04-16 15:22:37.246983: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:22:51.657854: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 95, loss = 9.179992, source = [156  40], target = [156  40] (129.481 sec)
+2020-04-16 15:24:40.585611: W tensorflow/core/framework/allocator.cc:101] Allocation of 5526112800 exceeds 10% of system memory.
+2020-04-16 15:24:49.146882: W tensorflow/core/framework/allocator.cc:101] Allocation of 5526112800 exceeds 10% of system memory.
+INFO:tensorflow:step = 95, loss = 9.311522, source = [78 80], target = [78 74] (110.735 sec)
+2020-04-16 15:26:31.464154: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+2020-04-16 15:26:40.023430: W tensorflow/core/framework/allocator.cc:101] Allocation of 5850671400 exceeds 10% of system memory.
+INFO:tensorflow:step = 95, loss = 9.235676, source = [97 64], target = [97 63] (114.792 sec)
+2020-04-16 15:28:30.876476: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:28:43.649156: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 96, loss = 9.170584, source = [195  32], target = [195  32] (128.222 sec)
+2020-04-16 15:30:36.370116: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 15:30:46.085134: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 96, loss = 9.243346, source = [111  56], target = [111  55] (115.546 sec)
+2020-04-16 15:32:33.166327: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:32:45.781003: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 96, loss = 9.201546, source = [130  48], target = [130  48] (128.251 sec)
+2020-04-16 15:34:37.933799: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:34:48.001868: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 96, loss = 9.16241, source = [156  40], target = [156  40] (114.042 sec)
+2020-04-16 15:36:30.933782: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:36:40.005817: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 97, loss = 9.198175, source = [520  12], target = [520  12] (113.371 sec)
+2020-04-16 15:38:25.606428: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 15:38:38.913511: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 97, loss = 9.088327, source = [223  28], target = [223  28] (118.238 sec)
+2020-04-16 15:40:30.751853: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+2020-04-16 15:40:42.026102: W tensorflow/core/framework/allocator.cc:101] Allocation of 5983750000 exceeds 10% of system memory.
+INFO:tensorflow:step = 97, loss = 9.117856, source = [625  10], target = [625  10] (122.522 sec)
+2020-04-16 15:42:27.212173: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:42:38.788439: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 97, loss = 8.958449, source = [312  20], target = [312  20] (119.985 sec)
+2020-04-16 15:44:32.250703: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:44:41.874935: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 98, loss = 9.123195, source = [156  40], target = [156  40] (123.523 sec)
+2020-04-16 15:46:28.418475: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:46:37.903855: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 98, loss = 9.015655, source = [260  24], target = [260  24] (113.230 sec)
+2020-04-16 15:48:24.685662: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:48:39.093392: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 98, loss = 9.248743, source = [130  48], target = [130  48] (121.072 sec)
+2020-04-16 15:50:32.357638: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:50:43.876111: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 98, loss = 9.104069, source = [195  32], target = [195  32] (124.370 sec)
+2020-04-16 15:52:27.840196: W tensorflow/core/framework/allocator.cc:101] Allocation of 5152726800 exceeds 10% of system memory.
+2020-04-16 15:52:35.457765: W tensorflow/core/framework/allocator.cc:101] Allocation of 5152726800 exceeds 10% of system memory.
+INFO:tensorflow:step = 99, loss = 9.281647, source = [78 80], target = [78 69] (105.983 sec)
+2020-04-16 15:54:14.387049: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 15:54:23.260486: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 99, loss = 9.159308, source = [111  56], target = [111  56] (114.821 sec)
+2020-04-16 15:56:16.951839: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 15:56:30.737185: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 99, loss = 9.167218, source = [156  40], target = [156  40] (127.299 sec)
+2020-04-16 15:58:18.134481: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 15:58:27.527521: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 99, loss = 9.269278, source = [97 64], target = [97 64] (115.576 sec)
+2020-04-16 16:00:11.634124: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 16:00:20.941885: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:global_step/sec: 0.00181152
+INFO:tensorflow:step = 100, loss = 9.041619, source = [223  28], target = [223  28] (116.328 sec)
+2020-04-16 16:02:17.043664: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+2020-04-16 16:02:29.933852: W tensorflow/core/framework/allocator.cc:101] Allocation of 5849714000 exceeds 10% of system memory.
+INFO:tensorflow:step = 100, loss = 9.135847, source = [130  48], target = [130  47] (127.348 sec)
+2020-04-16 16:04:16.628904: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:04:26.728928: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 100, loss = 9.11995, source = [156  40], target = [156  40] (114.906 sec)
+2020-04-16 16:06:09.715517: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:06:18.536631: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 100, loss = 8.902148, source = [390  16], target = [390  16] (105.847 sec)
+2020-04-16 16:07:56.003773: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:08:07.169281: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 101, loss = 9.054069, source = [195  32], target = [195  32] (109.177 sec)
+2020-04-16 16:09:49.502449: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:10:03.884144: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 101, loss = 9.011273, source = [260  24], target = [260  24] (119.660 sec)
+2020-04-16 16:11:46.237027: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:11:54.357034: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 101, loss = 8.889749, source = [312  20], target = [312  20] (109.022 sec)
+2020-04-16 16:13:33.503638: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 16:13:41.161928: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 101, loss = 8.892469, source = [446  14], target = [446  14] (108.290 sec)
+2020-04-16 16:15:22.082741: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+2020-04-16 16:15:31.238678: W tensorflow/core/framework/allocator.cc:101] Allocation of 5844927000 exceeds 10% of system memory.
+INFO:tensorflow:step = 102, loss = 9.1881895, source = [111  56], target = [111  55] (107.396 sec)
+2020-04-16 16:17:19.274468: W tensorflow/core/framework/allocator.cc:101] Allocation of 5787483000 exceeds 10% of system memory.
+2020-04-16 16:17:32.146046: W tensorflow/core/framework/allocator.cc:101] Allocation of 5787483000 exceeds 10% of system memory.
+INFO:tensorflow:step = 102, loss = 9.230505, source = [65 96], target = [65 93] (123.630 sec)
+2020-04-16 16:19:14.838022: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+2020-04-16 16:19:22.022345: W tensorflow/core/framework/allocator.cc:101] Allocation of 5600790000 exceeds 10% of system memory.
+INFO:tensorflow:step = 102, loss = 9.168267, source = [78 79], target = [78 75] (104.066 sec)
+2020-04-16 16:21:01.342811: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:21:14.885079: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 102, loss = 9.165183, source = [130  48], target = [130  48] (122.541 sec)
+2020-04-16 16:22:59.797470: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:23:08.250467: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 103, loss = 9.054554, source = [156  40], target = [156  40] (109.408 sec)
+2020-04-16 16:24:49.189187: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+2020-04-16 16:24:58.199547: W tensorflow/core/framework/allocator.cc:101] Allocation of 5978005600 exceeds 10% of system memory.
+INFO:tensorflow:step = 103, loss = 8.983554, source = [223  28], target = [223  28] (106.776 sec)
+2020-04-16 16:26:42.934470: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:26:57.497297: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 103, loss = 9.101823, source = [156  40], target = [156  40] (121.620 sec)
+2020-04-16 16:28:38.925709: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:28:47.342781: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 103, loss = 9.139002, source = [130  48], target = [130  48] (108.858 sec)
+2020-04-16 16:30:33.110711: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+2020-04-16 16:30:45.697184: W tensorflow/core/framework/allocator.cc:101] Allocation of 5943539200 exceeds 10% of system memory.
+INFO:tensorflow:step = 104, loss = 9.114125, source = [97 64], target = [97 64] (125.004 sec)
+2020-04-16 16:32:31.131121: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:32:39.333095: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 104, loss = 9.01976, source = [195  32], target = [195  32] (105.560 sec)
+2020-04-16 16:34:21.988335: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:34:36.545541: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 104, loss = 8.916319, source = [260  24], target = [260  24] (120.662 sec)
+2020-04-16 16:36:19.072830: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:36:28.294960: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 104, loss = 9.085497, source = [156  40], target = [156  40] (116.349 sec)
+2020-04-16 16:38:15.098902: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+2020-04-16 16:38:26.803755: W tensorflow/core/framework/allocator.cc:101] Allocation of 5951198400 exceeds 10% of system memory.
+INFO:tensorflow:step = 105, loss = 9.127384, source = [111  56], target = [111  56] (123.261 sec)
+2020-04-16 16:40:17.326960: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+2020-04-16 16:40:25.725425: W tensorflow/core/framework/allocator.cc:101] Allocation of 5750144400 exceeds 10% of system memory.
+INFO:tensorflow:step = 105, loss = 9.264593, source = [78 80], target = [78 77] (106.654 sec)
+2020-04-16 16:42:03.441470: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:42:12.121192: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 105, loss = 8.844958, source = [312  20], target = [312  20] (106.905 sec)
+2020-04-16 16:43:58.145652: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:44:12.708897: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+INFO:tensorflow:step = 105, loss = 9.143911, source = [130  48], target = [130  48] (124.065 sec)
+2020-04-16 16:45:55.408245: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
+2020-04-16 16:46:05.424942: W tensorflow/core/framework/allocator.cc:101] Allocation of 5974176000 exceeds 10% of system memory.
